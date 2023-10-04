@@ -73,21 +73,6 @@ public void Test_GetCustomers_Missing_Paramters()
 }
 
 /// <summary>
-/// Retrieves the innermost exception from a given exception.
-/// </summary>
-/// <param name="ex">The exception from which to extract the innermost exception.</param>
-/// <returns>The innermost exception, 
-/// 	or the original exception if it has no inner exceptions.
-/// </returns>
-private Exception GetInnerException(Exception ex)
-{
-	while (ex.InnerException != null)
-		ex = ex.InnerException;
-	return ex;
-}
-
-
-/// <summary>
 /// Tests the GetCustomers method for retrieving customers based solely on the last name.
 /// </summary>
 public void Test_GetCustomers_LastName()
@@ -139,6 +124,20 @@ public void Test_GetCustomers_RemoveFromViewFlag_False()
 	// Assert: Verify that the output matches expected results.
 }
 #endregion
+#endregion
 
-
+#region Helper
+/// <summary>
+/// Retrieves the innermost exception from a given exception.
+/// </summary>
+/// <param name="ex">The exception from which to extract the innermost exception.</param>
+/// <returns>The innermost exception, 
+/// 	or the original exception if it has no inner exceptions.
+/// </returns>
+private Exception GetInnerException(Exception ex)
+{
+	while (ex.InnerException != null)
+		ex = ex.InnerException;
+	return ex;
+}
 #endregion
