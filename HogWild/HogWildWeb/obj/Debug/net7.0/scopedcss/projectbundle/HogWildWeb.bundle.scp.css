@@ -1,9 +1,45 @@
 /* _content/HogWildWeb/Pages/SamplePages/Basics.razor.rz.scp.css */
-namespace HogWildWeb.Pages.SamplePages[b-ym1lgl0xfj]
-{
-    public class Basics
-    {
-    }
+.setflex[b-ym1lgl0xfj] {
+    display: flex;
+}
+
+.onethird[b-ym1lgl0xfj] {
+    width: 31%;
+    margin-right: 2%;
+}
+
+.onehalf[b-ym1lgl0xfj] {
+    width: 47%;
+    margin-right: 3%;
+}
+
+.smallbox[b-ym1lgl0xfj] {
+    width: 60px;
+}
+
+.bighalfpage[b-ym1lgl0xfj] {
+    width: 57%;
+    margin-right: 3%;
+}
+
+.smallhalfpage[b-ym1lgl0xfj] {
+    width: 37%;
+    margin-right: 3%;
+}
+
+.lefthalfpage[b-ym1lgl0xfj] {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.righthalfpage[b-ym1lgl0xfj] {
+    width: 45%;
+    margin-left: 5%;
+}
+
+.danger[b-ym1lgl0xfj] {
+    color: var(--danger-text-color);
+    background-color: var(--danger-color);
 }
 /* _content/HogWildWeb/Shared/MainLayout.razor.rz.scp.css */
 .page[b-6ez2o7dps6] {
