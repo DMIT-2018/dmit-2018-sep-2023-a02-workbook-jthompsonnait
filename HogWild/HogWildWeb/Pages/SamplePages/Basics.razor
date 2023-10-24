@@ -94,6 +94,31 @@
             Radio/Check/Area Submit
         </button>
     </div>
+    <div class=onethird>
+        <h3>List and Slider</h3>
+        <label>
+            <!-- Display a label for the dropdown, instructing the user to select their favorite ride. -->
+            Select your favorite Ride
+
+            <!-- Create a dropdown select element that binds to the 'myRide' property. -->
+            <select @bind="myRide">
+
+                <!-- Default option with a value of "0" and instructs the user to select a ride. -->
+                <option value="0">Select ride ...</option>
+
+                <!-- Loop through each 'ride' in the 'rides' collection and create an option element for each. -->
+                @foreach (var ride in @rides)
+                {
+                    <!-- Set the option value to the 'ValueID' of the 'ride' object. -->
+                    <option value="@ride.ValueID">
+                        <!-- Display the 'DisplayText' of the 'ride' object as the option text. -->
+                        @ride.DisplayText
+                    </option>
+                }
+            </select>
+        </label>
+    
+    </div>
 </section>
 
 

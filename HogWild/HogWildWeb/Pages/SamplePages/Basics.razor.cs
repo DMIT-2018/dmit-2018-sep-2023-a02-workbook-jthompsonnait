@@ -44,7 +44,7 @@ namespace HogWildWeb.Pages.SamplePages
         /// <summary>
         /// Get or set the ID of the selection ride from the rides list
         /// </summary>
-        private int myRide
+        private int myRide;
 
         /// <summary>
         /// Get or set the user's choice vacation spot as a string
@@ -54,7 +54,7 @@ namespace HogWildWeb.Pages.SamplePages
         /// <summary>
         /// Get or sets a list of strings representing various vacation spots
         /// </summary>
-        private List<string> vacationSpots
+        private List<string> vacationSpots;
         #endregion
         //  used to display any feedback to the end user.
         private string feedback;
