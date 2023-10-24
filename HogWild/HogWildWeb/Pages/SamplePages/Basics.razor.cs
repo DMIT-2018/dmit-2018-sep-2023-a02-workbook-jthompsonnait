@@ -55,6 +55,12 @@ namespace HogWildWeb.Pages.SamplePages
         /// Get or sets a list of strings representing various vacation spots
         /// </summary>
         private List<string> vacationSpots;
+
+        /// <summary>
+        /// Gets or sets the review rating.
+        /// </summary>
+        /// <value>The review rating.</value>
+        private int reviewRating = 5;
         #endregion
         //  used to display any feedback to the end user.
         private string feedback;
@@ -129,6 +135,21 @@ namespace HogWildWeb.Pages.SamplePages
         }
 
         /// <summary>
+        /// This method is called when the user submits the list and slider form.
+        /// It gathers user selections for 'myRide,' 'vacationSpot,' and 'reviewRating,'
+        /// and generates feedback based on these selections.
+        /// </summary>
+        private void ListSliderSubmit()
+        {
+            // Generate feedback string incorporating the selected values.
+            feedback = $"Ride {myRide}; Vacation {vacationSpot}; Review Rating {reviewRating}";
+
+            // Invoke asynchronous method 'StateHasChanged' to trigger a re-render of the component.
+            InvokeAsync(StateHasChanged);
+        }
+
+
+        /// <summary>
         /// Populates the 'rides' list and 'vacationSpots' list with predefined data.
         /// </summary>
         private void PopulatedList()
@@ -147,6 +168,15 @@ namespace HogWildWeb.Pages.SamplePages
 
             // Sort the 'rides' list alphabetically based on the 'DisplayText' property.
             rides.Sort((x, y) => x.DisplayText.CompareTo(y.DisplayText));
+
+            // Initialize and populate the 'vacationSpots' list with predefined vacation destinations.
+            vacationSpots = new List<string>();
+            vacationSpots.Add("California");
+            vacationSpots.Add("Caribbean");
+            vacationSpots.Add("Cruising");
+            vacationSpots.Add("Europe");
+            vacationSpots.Add("Florida");
+            vacationSpots.Add("Mexico");
         }
 
         #endregion
