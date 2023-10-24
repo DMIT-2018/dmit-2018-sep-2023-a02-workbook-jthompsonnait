@@ -62,10 +62,39 @@
     </div>
     <div class="onethird">
         <h3>Radio Buttons, Check Box and Text Areas</h3>
+        <br/>
+        <label>
+            Select your favorite meal using sa foreach loop<br/>
+        </label>
+        <br/>
+        @foreach (var item in @meals)
+        {
+            @* Loop through the meals lists and create radio buttons for each meal option *@
+            <input type="radio" nam="meal" value="@item" @onchange="HandMealSelection" checked="@(item == meal)"/> @item
+            <br/>
+        }
+        <br/>
+        <label>
+            <!-- Checkbox inpout bound to the acceptance box variable-->
+            <input type="checkbox" value="true" @bind="acceptanceBox"/>
+            <!-- label text indicating the aggreemebt-->
+            &nbsp; I agree to terms
+        </label>
+        
+        <br/>
+        <br />
+        <!-- Textarea input element -->
+        <textarea rows="5" cols="50" placeholder="Enter message" 
+            @bind="messageBody"></textarea> <!-- Data binding to the 'messageBody' C# variable -->
+        
+        <br/>
+        <br/>
+        <!-- Button element for submitting the RadioCheckAreaSubmit method when clicked -->
+        <button class="btn-success" @onclick="RadioCheckAreaSubmit">
+            Radio/Check/Area Submit
+        </button>
     </div>
 </section>
-
-
 
 
 <div>

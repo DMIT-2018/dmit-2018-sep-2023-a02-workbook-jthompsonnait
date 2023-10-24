@@ -1,4 +1,7 @@
-﻿namespace HogWildWeb.Pages.SamplePages
+﻿using HogWildWeb.Areas.ViewModels;
+using Microsoft.AspNetCore.Components;
+
+namespace HogWildWeb.Pages.SamplePages
 {
     public partial class Basics
     {
@@ -28,6 +31,31 @@
         //  used to hold the value for the message body
         private string messageBody;
         #endregion
+
+        #region List and Sliders
+        //  pretend that the following collection is data from a database
+        //  The collection is based on a property class called SelectionList
+        //  The data for the list will be created in a separate method.
+        /// <summary>
+        /// Get or sets a list of SelectionView object representing various rides
+        /// </summary>
+        private List<SelectionView> rides;
+
+        /// <summary>
+        /// Get or set the ID of the selection ride from the rides list
+        /// </summary>
+        private int myRide
+
+        /// <summary>
+        /// Get or set the user's choice vacation spot as a string
+        /// </summary>
+        private string vacationSpot;
+
+        /// <summary>
+        /// Get or sets a list of strings representing various vacation spots
+        /// </summary>
+        private List<string> vacationSpots
+        #endregion
         //  used to display any feedback to the end user.
         private string feedback;
         #endregion
@@ -42,6 +70,9 @@
 
             //  call the randomValue method to perform custom initialization logic.
             RandomValue();
+
+            //  Call the 'PopulatedList' method to populate predefined data for the list
+            PopulatedList();
         }
 
         //  Generates a random number between 0 and 25 using the Random class
@@ -81,6 +112,43 @@
             InvokeAsync(StateHasChanged);
         }
 
+        //  Handle the selction of the meal
+        private void HandMealSelection(ChangeEventArgs e)
+        {
+            meal = e.Value.ToString();
+        }
+
+        //  This method is called when a user submits radio, check box and area text
+        private void RadioCheckAreaSubmit()
+        {
+            //  Combine various values and store them in the 'feedback' variable as a formatted string.
+            feedback = $"Meal {meal}; Acceptance {acceptanceBox}; Message {messageBody}";
+
+            //  Trigger a UI update to reflect the changes made to the 'feedback' variable.
+            InvokeAsync((StateHasChanged));
+        }
+
+        /// <summary>
+        /// Populates the 'rides' list and 'vacationSpots' list with predefined data.
+        /// </summary>
+        private void PopulatedList()
+        {
+            int i = 1;
+
+            // Create a pretend collection from the database representing different types
+            // of transportation (rides).
+            rides = new List<SelectionView>();
+            rides.Add(new SelectionView() { ValueID = i++, DisplayText = "Car" });
+            rides.Add(new SelectionView() { ValueID = i++, DisplayText = "Bus" });
+            rides.Add(new SelectionView() { ValueID = i++, DisplayText = "Bike" });
+            rides.Add(new SelectionView() { ValueID = i++, DisplayText = "Motorcycle" });
+            rides.Add(new SelectionView() { ValueID = i++, DisplayText = "Boat" });
+            rides.Add(new SelectionView() { ValueID = i++, DisplayText = "Plane" });
+
+            // Sort the 'rides' list alphabetically based on the 'DisplayText' property.
+            rides.Sort((x, y) => x.DisplayText.CompareTo(y.DisplayText));
+        }
+
         #endregion
-    }
+        }
 }
