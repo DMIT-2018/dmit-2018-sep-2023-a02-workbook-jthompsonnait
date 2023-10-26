@@ -2,12 +2,25 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Pages\SamplePages\Basics.razor</string>
-      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Pages\SamplePages\Basics.razor.cs</string>
-      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Pages\SamplePages\Basics.razor.css</string>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildSystem\Entities\Category.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Shared\NavMenu.razor</string>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildSystem\Entities\WorkingVersion.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Pages\SamplePages\Basics.razor.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildSystem\HogWildExtension.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\appsettings.json</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Program.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildSystem\BLL\WorkingVersionsService.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

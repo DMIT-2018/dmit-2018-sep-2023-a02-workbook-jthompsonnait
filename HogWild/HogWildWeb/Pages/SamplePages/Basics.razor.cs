@@ -1,4 +1,5 @@
-﻿using HogWildWeb.Areas.ViewModels;
+﻿
+using HogWildWeb.Areas.ViewModels;
 using Microsoft.AspNetCore.Components;
 
 namespace HogWildWeb.Pages.SamplePages
@@ -64,7 +65,8 @@ namespace HogWildWeb.Pages.SamplePages
         #endregion
         //  used to display any feedback to the end user.
         private string feedback;
-        #endregion
+
+ #endregion
 
         #region Methods
 

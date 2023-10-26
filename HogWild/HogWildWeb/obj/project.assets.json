@@ -1222,6 +1222,19 @@
             "rid": "win"
           }
         }
+      },
+      "HogWildSystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.12"
+        },
+        "compile": {
+          "bin/placeholder/HogWildSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HogWildSystem.dll": {}
+        }
       }
     }
   },
@@ -3318,10 +3331,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "HogWildSystem/1.0.0": {
+      "type": "project",
+      "path": "../HogWildSystem/HogWildSystem.csproj",
+      "msbuildProject": "../HogWildSystem/HogWildSystem.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "HogWildSystem >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 7.0.12",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.12",
       "Microsoft.AspNetCore.Identity.UI >= 7.0.12",
@@ -3361,7 +3380,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GitHub\\dmit-2018-sep-2023-a02-workbook-jthompsonnait\\HogWild\\HogWildSystem\\HogWildSystem.csproj": {
+              "projectPath": "C:\\GitHub\\dmit-2018-sep-2023-a02-workbook-jthompsonnait\\HogWild\\HogWildSystem\\HogWildSystem.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

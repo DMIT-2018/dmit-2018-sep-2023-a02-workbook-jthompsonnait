@@ -63,7 +63,6 @@ C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\D
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\HogWildWeb.AssemblyInfoInputs.cache
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\HogWildWeb.AssemblyInfo.cs
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\HogWildWeb.csproj.CoreCompileInputs.cache
-C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\HogWildWeb.MvcApplicationPartsAssemblyInfo.cs
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\HogWildWeb.MvcApplicationPartsAssemblyInfo.cache
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\HogWildWeb.RazorAssemblyInfo.cache
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\HogWildWeb.RazorAssemblyInfo.cs
@@ -85,3 +84,5 @@ C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\D
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\HogWildWeb.genruntimeconfig.cache
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\ref\HogWildWeb.dll
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\scopedcss\Pages\SamplePages\Basics.razor.rz.scp.css
+C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\bin\Debug\net7.0\HogWildSystem.dll
+C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\bin\Debug\net7.0\HogWildSystem.pdb
