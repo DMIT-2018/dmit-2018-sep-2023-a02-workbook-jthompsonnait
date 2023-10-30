@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
+using MudBlazor;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +25,7 @@ var connectionStringHogWild = builder.Configuration.GetConnectionString("OLTP-DM
 
 //  :given
 //  register the supplied connections string with the IServiceCollection
-//  Register the conne tion string for individual accounts
+//  Register the connection string for individual accounts
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
@@ -39,7 +41,7 @@ builder.Services.AddBackendDependencies(options =>
     options.UseSqlServer(connectionStringHogWild));
 
 
-
+builder.Services.AddMudServices();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
