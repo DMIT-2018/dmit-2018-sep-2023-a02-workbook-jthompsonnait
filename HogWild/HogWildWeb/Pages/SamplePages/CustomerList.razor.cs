@@ -1,4 +1,5 @@
-﻿using HogWildSystem.BLL;
+﻿using DMIT2018.Paginator;
+using HogWildSystem.BLL;
 using HogWildSystem.ViewModels;
 using HogWildWeb.Shared;
 using Microsoft.AspNetCore.Components;
@@ -31,6 +32,55 @@ namespace HogWildWeb.Pages.SamplePages
         private List<string> errorDetails = new();
         #endregion
 
+        #region Paginator
+
+        //  Desired current page size
+        private const int PAGE_SIZE = 10;
+
+        //  sort column used with the paginator
+        protected string SortField { get; set; } = "Owner";
+      
+        //  sort direction used with the paginator
+        protected string Direction { get; set; } = "desc";
+
+        //  current page for the paginator
+        protected int CurrentPage { get; set; } = 1;
+
+        //  paginator collection of customer Search view
+        protected PagedResult<CustomerSearchView> PaginatorCustomerSearch { get; set; } = new();
+
+        private async void Sort(string column)
+        {
+            Direction = SortField == column ? Direction == "asc" ? "desc" : "asc" : "asc";
+            SortField = column;
+            await Search();
+        }
+
+        //  sets css class to display up and down arrows
+        private string GetSortColumn(string x)
+        {
+            return x == SortField ? Direction == "desc" ? "desc" : "asc" : "";
+        }
+
+        //  Sets the sort icon
+        private string SetSortIcon(string columnName)
+        {
+            if (SortField == columnName)
+            {
+                return "fa fa-sort";
+            }
+            if (SortField == columnName)
+            {
+                return "fa fa-sort-up";
+            }
+            else
+            {
+                return "fa fa-sort-down";
+            }
+        }
+
+        #endregion
+
         #region Properties
         // Injects the CustomerService dependency.
         [Inject]
@@ -46,7 +96,7 @@ namespace HogWildWeb.Pages.SamplePages
 
         #region Methods
         //  Search for an existing customer
-        private void Search()
+        private async Task Search()
         {
             try
             {
@@ -67,8 +117,11 @@ namespace HogWildWeb.Pages.SamplePages
                     throw new ArgumentException("Please provide either a last name and/or phone number");
                 }
 
-                Customers = CustomerService.GetCustomers(lastName, phoneNumber);
-                if (Customers.Count() > 0)
+                PaginatorCustomerSearch = await CustomerService.GetCustomers(lastName, phoneNumber,
+                                                CurrentPage, PAGE_SIZE, SortField, Direction);
+                await InvokeAsync(StateHasChanged);
+
+                if (PaginatorCustomerSearch.Results.Length > 0)
                 {
                     feedbackMessage = "Search for customer(s) was successful";
                 }
@@ -102,16 +155,24 @@ namespace HogWildWeb.Pages.SamplePages
         }
 
         //  new customer
-        private void New(){}
+        private void New()
+        {
+            NavigationManager.NavigateTo($"/SamplePages/CustomerEdit/0");
+        }
 
         //  Edit selected customer
-        private void EditCustomer(){}
+        private void EditCustomer(int customerID)
+        {
+
+            NavigationManager.NavigateTo($"/SamplePages/CustomerEdit/{customerID}");
+        }
 
         //  new invoice for selected customer
-        private void NewInvoice(){}
-
-
-#endregion
+        private void NewInvoice()
+        {
+            
+        }
+        #endregion
 
     }
 }

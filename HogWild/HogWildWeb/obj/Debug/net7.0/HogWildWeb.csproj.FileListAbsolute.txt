@@ -96,3 +96,4 @@ C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\bin\D
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\bin\Debug\net7.0\Microsoft.JSInterop.dll
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\bin\Debug\net7.0\MudBlazor.dll
 C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\HogWildWeb.MvcApplicationPartsAssemblyInfo.cs
+C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\obj\Debug\net7.0\scopedcss\Pages\SamplePages\CustomerEdit.razor.rz.scp.css

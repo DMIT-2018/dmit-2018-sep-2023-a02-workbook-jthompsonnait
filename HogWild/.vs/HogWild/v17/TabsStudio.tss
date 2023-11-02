@@ -29,5 +29,13 @@
     <ArrayOfString>
       <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Shared\BlazorHelperClass.cs</string>
     </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildSystem\ViewModels\CustomerEditView.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Pages\SamplePages\CustomerEdit.razor</string>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Pages\SamplePages\CustomerEdit.razor.cs</string>
+      <string>C:\GitHub\dmit-2018-sep-2023-a02-workbook-jthompsonnait\HogWild\HogWildWeb\Pages\SamplePages\CustomerEdit.razor.css</string>
+    </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

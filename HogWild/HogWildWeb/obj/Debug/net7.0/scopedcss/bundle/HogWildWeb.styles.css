@@ -41,6 +41,13 @@
     color: var(--danger-text-color);
     background-color: var(--danger-color);
 }
+/* _content/HogWildWeb/Pages/SamplePages/CustomerEdit.razor.rz.scp.css */
+.row[b-v8o2dq1d1u] {
+    display: flex;
+}
+.column[b-v8o2dq1d1u] {
+    flex: 50%;
+}
 /* _content/HogWildWeb/Shared/MainLayout.razor.rz.scp.css */
 .page[b-6ez2o7dps6] {
     position: relative;
