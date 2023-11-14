@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>C:\OD\OneDrive - NAIT\DMIT 2018 - Course Files\Blazor Demo\HogWild\HogWildWebApp\Pages\SamplePages\SimpleListToList.razor</string>
+      <string>C:\OD\OneDrive - NAIT\DMIT 2018 - Course Files\Blazor Demo\HogWild\HogWildWebApp\Pages\SamplePages\SimpleListToList.razor.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\OD\OneDrive - NAIT\DMIT 2018 - Course Files\Blazor Demo\HogWild\HogWildWebApp\Pages\SamplePages\SImpleListToList.razor.css</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\OD\OneDrive - NAIT\DMIT 2018 - Course Files\Blazor Demo\HogWild\HogWildWebApp\Pages\SamplePages\SimpleNonIndexList.razor</string>
+      <string>C:\OD\OneDrive - NAIT\DMIT 2018 - Course Files\Blazor Demo\HogWild\HogWildWebApp\Pages\SamplePages\SimpleNonIndexList.razor.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\OD\OneDrive - NAIT\DMIT 2018 - Course Files\Blazor Demo\HogWild\HogWildSystem\BLL\InvoiceService.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\OD\OneDrive - NAIT\DMIT 2018 - Course Files\Blazor Demo\HogWild\HogWildWebApp\Components\DialogConfirm.razor</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\OD\OneDrive - NAIT\DMIT 2018 - Course Files\Blazor Demo\HogWild\HogWildWebApp\Components\SimpleComponentDialog.razor</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>
